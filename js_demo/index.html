@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksel Wagner | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1>Learning about JavaScript</h1>
+    <h2>This is an example of onclick events.</h2>
+    <p><a href="https://www.google.com" target="_blank" onclick="alert('Warning!\nYou are leaving this website.');">Search Google</a></p>
+
+    <h2>This is an example of how to do math with JS.</h2>
+    <p>What is 5+6</p>
+    <button onclick="document.getElementById('add').innerHTML = 5+6">Click here to find the answer!</button>
+    <p id="add"></p>
+
+    <h2>This is how we change text on this page with JS.</h2>
+    <button onclick="document.getElementById('change').innerHTML = 'Surprise! This text is diffrent'">Click me to change the text below.</button>
+<p id="change">This text will change</p>
+
+<h2>It is possible to change the date and time.</h2>
+<button onclick="document.getElementById('date').innerHTML=Date()">Click me for date and time!</button>
+<p id="date"></p>
+
+<h2>This is how to make a function with JS.</h2>
+<p>This is how to add text using a function.</p>
+<button onclick="pFun()">Click me to run a function!</button>
+<p id="p-fun"></p>
+
+<h2>How do we return user data?</h2>
+<button onclick="askName()">Click to enter your name</button>
+<p id="ask-name"></p>
+
+<h2>This is how to ask other questions with JS.</h2>
+<button onclick="askQuestion()">Click here for a question.</button>
+<p id="question"></p>
+
+<h2>This is how to make images appear with a button.</h2>
+<button onclick="showImage()">Click for a crazy image.</button>
+<img id="crazy" width="500px">
+
+    <script>
+        //alert("Hello World!");
+
+        function pFun() {
+            var p= document.getElementById('p-fun');
+            p.innerHTML='You just ran a function!';
+            p.fontSize = '30px';
+            p.style.color = 'blue';
+        }
+
+        function showImage() {
+            var image= document.getElementById('crazy');
+            image.src = 'images/crazy_girl_image.jpeg'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo | Aksel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #navy-text {
+            color: rgb(20, 12, 82);
+        }
+        #orange-text {
+            color: coral;
+        }
+        #multi-text {
+            color: lightcoral;
+            text-align: center;
+        }
+        p {font-size:13px;}
+        .multi-line {
+            font-size: 15px;
+            color: steelblue;
+            font-family:Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+   
+    <div class="container">
+        <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+    
+    <h1>Discovering How to Add Style</h1>
+    <h2>This is how to add style Inline CSS.</h2>
+    <p style="color: rgb(63, 118, 153);">This text is blue.</p>
+    <p style="color: seagreen;">This text is showing green.</p>
+    <p style="font-size:60px;">This text is verry large.</p>
+    <p style="font-size:9px;">This text is verry small.</p>
+    <p style="text-align: center;">This text is centered.</p>
+    <p style="text-align: right;">This text is in the right.</p>
+    <p style="color: steelblue;font-size:24px;text-align: center;">This text is showing how you can apply many styles.</p>
+
+    <h2>This is how to use Internal styling.</h2>
+    <p id="navy-text">This text is navy.</p>
+    <p id="orange-text">This text is orange.</p>
+    <p id="multi-text">I want this text to be many styles.</p>
+
+    <h3 class="multi-line">This is just an example of text.</h3>
+    <p class="multi-line">Text can be styled multiable lines at once with a class selector.</p>
+
+    <h2>This is how to use External styling.</h2>
+    <p id="pink-text">This text is pink.</p>
+    <h2>This is an example of divs and spans</h2>
+    <div class="copy">
+        <p>This text is part of a div.</p>
+        <p>This text is also part of a div. <span id="span_text">SPAN</span>
+        </p>
+    </div>
+</body>
+</html>
